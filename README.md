@@ -25,11 +25,11 @@ To run the Hero App locally, follow these steps:
    git clone https://github.com/wala-ham/HeroApp.git
    
 
-2. **To run the backend**
+2. **To run the backend:**
    ```bash
   nodemon server.js
 
-3. **To run the backend**
+3. **To run the backend:**
    ```bash
   ng serve
 
