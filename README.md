@@ -31,5 +31,7 @@ To run the Hero App locally, follow these steps:
   
 
 3. **To run the backend:**
+    ```bash
+   ng serve
 
 
