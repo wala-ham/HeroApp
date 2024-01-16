@@ -26,11 +26,10 @@ To run the Hero App locally, follow these steps:
    
 
 2. **To run the backend:**
-   ```bash
-  nodemon server.js
+    ```bash
+   nodemon server.js
+  
 
 3. **To run the backend:**
-   ```bash
-  ng serve
 
 
