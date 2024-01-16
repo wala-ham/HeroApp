@@ -1,0 +1,14 @@
+<div class="row mt-5">
+    <div class="col-3">
+        <input  [(ngModel)]="hero.name" type="text" placeholder="name" class="form-control m-1">
+    </div>
+    <div class="col-3">
+        <input [(ngModel)]="hero.power" type="text" placeholder="power" class="form-control m-1">
+    </div>
+    <div class="col-3">
+        <input (change)="selectImage($event)" type="file" placeholder="image Url" class="form-control m-1">
+    </div>
+    <div class="col-3">
+        <button (click)="ajouter()" class="btn form-control m-1 text-light">Create</button>
+    </div>
+</div>

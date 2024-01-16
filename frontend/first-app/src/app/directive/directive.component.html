@@ -1,0 +1,57 @@
+<p>directive works!</p>
+
+<p *ngIf="display == true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, eaque quos facere dicta nemo rem libero in dolores. Dolore nulla dolor fugiat ipsum officia provident corrupti esse eum nisi repellendus.
+</p>
+
+
+
+ <img *ngIf="displayImage == true"  [src]="url" alt="Eran"> <br>
+ <button (click)="displayImage = !displayImage">Play</button>
+
+ 
+
+ <h1 *ngFor="let item of fruits">{{item}}</h1>
+
+ 
+<div *ngFor="let item of students">
+   <div *ngIf="item.age > 25">
+      <h1>{{item.name}}</h1>
+      <h3>{{item.age}}</h3>
+   </div>
+</div> 
+
+
+<div *ngFor="let item of students">
+   <ng-container *ngIf="item.age > 25">
+      <h1>{{item.name}}</h1>
+      <h3>{{item.age}}</h3>
+   </ng-container>
+</div>
+
+<ul [ngSwitch]="superhero">
+   <li *ngSwitchCase="'Groot'">Groot</li>
+   <li *ngSwitchCase="'Batman'">Batman</li>
+   <li *ngSwitchCase="'Thor'">Thor</li>
+   <li *ngSwitchCase="'Spiderman'">Spiderman</li>
+   <li *ngSwitchCase="'Ironman'">Ironman</li>
+   <li *ngSwitchDefault>Superhero</li>
+</ul>
+
+<div [ngStyle]="{'background-color' : user.color,'color':user.color}">
+   <h1>{{user.name}}</h1>
+   <h3>{{user.age}}</h3>
+</div>
+
+<div *ngFor="let item of students" [ngClass]="{'bg-danger' :item.age<=25 ,'bg-success' :item.age > 25   }">
+   
+      <h1>{{item.name}}</h1>
+      <h3>{{item.age}}</h3>
+
+</div> 
+
+
+
+
+
+
+ 
